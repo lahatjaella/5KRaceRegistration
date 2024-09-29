@@ -1,0 +1,92 @@
+/* Base styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container styling for the form */
+#input-entry {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+#input-entry h2 {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+#input-entry input, #input-entry select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#input-entry input:focus, #input-entry select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+#input-entry button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#input-entry button:hover {
+  background-color: #0056b3;
+}
+
+/* Participant Table Styling */
+table {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+table th {
+  background-color: #343a40;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+table tr:hover {
+  background-color: #f1f3f5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #input-entry input, #input-entry select {
+    margin: 5px 0;
+  }
+
+  #input-entry button {
+    margin-top: 10px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
